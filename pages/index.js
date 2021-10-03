@@ -1,7 +1,7 @@
-import Head from "next/head";
 import FieldSelect from "../components/FieldSelect";
 import FieldText from "../components/FieldText";
 import Header from "../components/Header";
+import HomePageHead from "../components/HomePageHead";
 import Service from "../components/Service";
 import ServicesForm from "../components/ServicesForm";
 
@@ -25,18 +25,7 @@ const VALID_PORT_MAPPING = {
 export default function HomePage() {
   return (
     <>
-      <Head>
-        <title>Docker Genius | Effortless development environments with pure Docker.</title>
-        <meta property="og:url" content="https://dockergenius.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Docker Genius" />
-        <meta property="og:description" content="Effortless development environments with pure Docker." />
-        <meta property="og:image" content="https://dockergenius.com/social_og.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Docker Genius" />
-        <meta name="twitter:description" content="Effortless development environments with pure Docker." />
-        <meta name="twitter:image" content="https://dockergenius.com/social_twitter.png" />
-      </Head>
+      <HomePageHead/>
       <div className="Container">
         <Header
           tagline="Effortless development environments with pure Docker."
