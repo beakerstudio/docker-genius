@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  mysql:
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_PASSWORD: changeme
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_USER: local
+    image: 'mysql:8'
+    volumes:
+      - /var/lib/mysql

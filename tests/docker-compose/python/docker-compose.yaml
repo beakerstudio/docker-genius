@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile-python
+    command: python up.py
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+      PYTHONUNBUFFERED: 1

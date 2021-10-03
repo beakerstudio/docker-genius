@@ -1,0 +1,95 @@
+.Service {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  margin: 0 30px 30px;
+  max-height: 69px;
+  /* max-width: 300px; */
+  opacity: 0.75;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.25s ease-in-out, max-height 0.25s ease-in-out, max-width 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .Service {
+    margin: 0 15px 30px;
+    max-width: 300px;
+  }
+}
+
+.Service:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.Service.-active {
+  border-color: #3297BD;
+  max-height: 1200px;
+  opacity: 1;
+}
+
+@media screen and (min-width: 990px) {
+  .Service.-active {
+    max-height: 500px;
+    max-width: 1000px;
+  }
+}
+
+.Service.-active:hover {
+  cursor: default;
+}
+
+.Service_fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Service_title {
+  font-size: 18px;
+  line-height: 1;
+  padding: 26px 75px 25px 25px;
+  /* padding: 26px 75px 25px 65px; */
+}
+
+.Service_title::after {
+  background: #3297BD;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 69px;
+  width: 100%;
+}
+
+.Service_toggle {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 7px 10px;
+  pointer-events: none;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.Service_toggle:hover {
+  cursor: pointer;
+}
+
+.Service.-active .Service_toggle {
+  opacity: 0.75;
+  pointer-events: all;
+}
+
+.Service.-active .Service_toggle:hover {
+  opacity: 1;
+}

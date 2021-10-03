@@ -1,0 +1,35 @@
+name: Tests
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Go
+      run: ./test.sh
+      working-directory: tests/docker-compose/golang
+    - name: MongoDB
+      run: ./test.sh
+      working-directory: tests/docker-compose/mongodb
+    - name: MySQL
+      run: ./test.sh
+      working-directory: tests/docker-compose/mysql
+    - name: Node.js
+      run: ./test.sh
+      working-directory: tests/docker-compose/nodejs
+    - name: PHP
+      run: ./test.sh
+      working-directory: tests/docker-compose/php
+    - name: PostgreSQL
+      run: ./test.sh
+      working-directory: tests/docker-compose/postgresql
+    - name: Python
+      run: ./test.sh
+      working-directory: tests/docker-compose/python
+    - name: Redis
+      run: ./test.sh
+      working-directory: tests/docker-compose/redis

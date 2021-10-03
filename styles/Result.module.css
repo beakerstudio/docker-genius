@@ -1,0 +1,59 @@
+.Result {
+  margin: 0 15px 80px;
+}
+
+.Result_field {
+  background: transparent;
+  border: 1px solid #3297BD;
+  border-radius: 5px;
+  color: #3297BD;
+  display: block;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 18px 15px 17px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.Result_tab {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0 3px 3px 0;
+  opacity: 0.75;
+  padding: 20px 15px 19px;
+  text-decoration: none;
+  transition: opacity 0.25s ease-in-out;
+  width: 100%;
+}
+
+.Result_tab:not(.-active):hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.Result_tab.-active {
+  border-color: #3297BD;
+  color: #3297BD;
+  opacity: 1;
+}
+
+@media screen and (min-width: 990px) {
+  .Result_tab {
+    width: auto;
+  }
+  .Result_tabBar {
+    display: flex;
+  }
+}
+
+.Result_title {
+  margin-bottom: 40px;
+  text-align: center;
+}

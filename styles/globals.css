@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: #292F38;
+  color: #FFFFFF;
+  font-size: 1;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+@media screen and (min-width: 990px) {
+  h1 {
+    font-size: 76px;
+    line-height: 92px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+main {
+  margin: 0 15px;
+  padding: 0 0 50px;
+}
+
+main p,
+main ul {
+  line-height: 22px;
+}
+
+main ul {
+  list-style-position: inside;
+}
+
+main h2:not(:first-child),
+main h3:not(:first-child),
+main h4:not(:first-child),
+main p:not(:first-child),
+main ul:not(:first-child) {
+  margin-top: 22px;
+}
+
+main a,
+.Link {
+  color: #3297BD;
+  text-decoration: underline;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.Container {
+  margin: auto;
+  max-width: 990px;
+}

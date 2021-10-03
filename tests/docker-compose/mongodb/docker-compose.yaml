@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  mongodb:
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: changeme
+    image: 'mongo:4'

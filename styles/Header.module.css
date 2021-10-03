@@ -1,0 +1,38 @@
+.Header {
+  padding: 40px 0 80px;
+  text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+  .Header {
+    padding: 135px 0 110px;
+  }
+}
+
+.Header_logo {
+  display: inline-block;
+  opacity: 0.75;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.Header_logo img {
+  display: inline-block;
+  height: 43px;
+  width: 231px;
+}
+
+.Header_logo:hover {
+  opacity: 1;
+}
+
+.Header_tagline {
+  font-size: 21px;
+  line-height: 25px;
+  margin: 5px 0 12px;
+}
+
+@media screen and (min-width: 990px) {
+  .Header_tagline {
+    font-weight: bold;
+  }
+}

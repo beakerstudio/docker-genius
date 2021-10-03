@@ -1,0 +1,53 @@
+.Field {
+  display: block;
+  max-width: 318px;
+  padding: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.Field_error {
+  color: #BD8632;
+  margin-top: 6px;
+}
+
+.Field_label {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.Field_select,
+.Field_text {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #3297BD;
+  border-radius: 5px;
+  color: #3297BD;
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 18px 15px 17px;
+  width: 100%;
+}
+
+.Field_select:focus,
+.Field_text:focus {
+  outline: none;
+}
+
+.Field_select {
+  appearance: none;
+}
+
+.Field_selectIcon {
+  pointer-events: none;
+  position: absolute;
+  right: 30px;
+  top: 65px;
+}
+
+.Field.-error .Field_select,
+.Field.-error .Field_text {
+  border-color: #BD8632;
+}

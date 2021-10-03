@@ -1,0 +1,15 @@
+.ServicesForm_services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ServicesForm_submit {
+  margin-top: 30px;
+}
+
+.ServicesForm_terms {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 12px auto 80px;
+  max-width: 282px;
+}

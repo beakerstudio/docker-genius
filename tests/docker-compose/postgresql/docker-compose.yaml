@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  postgresql:
+    image: 'postgres:13'
+    environment:
+      POSTGRES_DB: app
+      POSTGRES_PASSWORD: changeme
+      POSTGRES_USER: local
+    ports:
+      - '5432:5432'
+    volumes:
+      - /var/lib/postgresql/data
