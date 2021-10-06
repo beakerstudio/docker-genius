@@ -363,6 +363,10 @@ export default function HomePage() {
               name="python_version"
               options={[
                 {
+                  label: "3.10",
+                  value: "3.10",
+                },
+                {
                   label: "3.9",
                   value: "3.9",
                 },
@@ -383,7 +387,7 @@ export default function HomePage() {
                   value: "2",
                 },
               ]}
-              value="3.9"
+              value="3.10"
             />
             <FieldText
               label="Command"
